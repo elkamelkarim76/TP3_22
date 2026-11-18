@@ -16,7 +16,7 @@ L'objectif est de mettre en œuvre les différentes étapes d'un processus de tr
 ## 2. Organisation du dépôt
 
 ```text
-TP3_IDxx/
+TP3_ID22/
 ├── README.md
 ├── Small/
 │   ├── 01_Soccer_Prediction_Small_Data.ipynb
