@@ -1,0 +1,12 @@
+data/
+output/
+*.sqlite
+*.csv
+*.zip
+.ipynb_checkpoints/
+__pycache__/
+spark-warehouse/
+metastore_db/
+models/gbt_best/
+kaggle.json
+.env

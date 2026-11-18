@@ -1,0 +1,21 @@
+services:
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: namenode
+    ports: ["9870:9870", "9000:9000"]
+    environment:
+      - CLUSTER_NAME=bigdata
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes: [namenode:/hadoop/dfs/name]
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes: [datanode:/hadoop/dfs/data]
+  jupyter:
+    image: quay.io/jupyter/pyspark-notebook
+    ports: ["8888:8888", "4040:4040"]
+    volumes: [./:/home/jovyan/work]
+volumes: {namenode: {}, datanode: {}}
