@@ -1,7 +1,7 @@
 # TP3 — Études de cas Small Data et Big Data
 
-**Étudiant :** TON NOM  
-**Identifiant :** IDxx  
+**Étudiant :** Karim Abdelwadoud
+**Identifiant :** ID22
 **Date :** 18/11/2026
 
 ## 1. Présentation du projet
@@ -18,31 +18,11 @@ L'objectif est de mettre en œuvre les différentes étapes d'un processus de tr
 ```text
 TP3_IDxx/
 ├── README.md
-├── .gitignore
-│
 ├── Small/
 │   ├── 01_Soccer_Prediction_Small_Data.ipynb
-│   ├── data/
-│   │   └── database.sqlite
-│   ├── app/
-│   │   └── main.py
-│   ├── models/
-│   │   ├── model.joblib
-│   │   └── features.json
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   └── .dockerignore
-│
 └── Big/
     ├── 02_Santander_Value_Prediction_Big_Data.ipynb
-    ├── data/
-    │   └── santander/
-    │       ├── train.csv
-    │       └── test.csv
-    ├── models/
-    ├── requirements.txt
-    ├── docker-compose.yml
-    └── submission.csv
+
 ```
 
 ## 3. Projet 1 — Small Data : Soccer Prediction
